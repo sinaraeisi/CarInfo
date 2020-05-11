@@ -10,16 +10,43 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var items = [CarInfo]()
     
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!{
+        didSet {
+            tableView.delegate = self
+            tableView.dataSource = self
+        }
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getItems()
         
     }
+    
+    func getItems() {
+        
+        let ferrari = CarInfo(image: UIImage(named: "ferrari")!, title: "ferrari 812", desc: "V12")
+        let maserati = CarInfo(image: UIImage(named: "maserati")!, title: "maserati ghibli", desc: "V8")
+        
+        items = [ferrari,maserati]
+        tableView.reloadData()
+    }
 
+}
 
+extension ViewController: UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }
 

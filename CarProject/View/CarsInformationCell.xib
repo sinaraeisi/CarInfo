@@ -57,7 +57,7 @@
             <connections>
                 <outlet property="carNameLabel" destination="BDs-pD-vPq" id="cly-Tn-AeT"/>
                 <outlet property="descriptionLabel" destination="kx9-vt-svv" id="aCj-Fv-UlK"/>
-                <outlet property="photoImageView" destination="vb3-Ys-t8u" id="kLR-E8-PTf"/>
+                <outlet property="imageCar" destination="vb3-Ys-t8u" id="jao-UZ-JZk"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="111.49553571428571"/>
         </tableViewCell>

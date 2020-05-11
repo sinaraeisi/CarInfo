@@ -10,18 +10,14 @@ import UIKit
 
 class CarsInformationCell: UITableViewCell {
     
-      @IBOutlet weak var carNameLabel: UILabel!
-      @IBOutlet weak var descriptionLabel: UILabel!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var carNameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var imageCar: UIImageView!
+    
+    func config(object: CarInfo) {
+        carNameLabel.text = object.title
+        descriptionLabel.text = object.desc
+        imageCar.image = object.image
     }
     
 }
