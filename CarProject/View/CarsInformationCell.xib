@@ -9,45 +9,56 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="CarsInformationCell" customModule="CarProject" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CarsInformationCell" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="CarsInformationCell" customModule="CarProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWR-WY-JFZ">
-                        <rect key="frame" x="8" y="16" width="90" height="90"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="90" id="NxV-pS-WDr"/>
-                            <constraint firstAttribute="width" constant="90" id="OdK-oJ-yyS"/>
-                        </constraints>
-                    </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="rUE-dJ-uF5">
-                        <rect key="frame" x="110" y="16" width="89.5" height="56"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="rUE-dJ-uF5">
+                        <rect key="frame" x="118" y="20" width="120" height="56"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maserati" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDs-pD-vPq">
-                                <rect key="frame" x="0.0" y="0.0" width="89.5" height="17.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="17.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ghibli v6 turbo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx9-vt-svv">
-                                <rect key="frame" x="0.0" y="38.5" width="89.5" height="17.5"/>
+                                <rect key="frame" x="0.0" y="38.5" width="120" height="17.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="bgC-1F-qXY"/>
+                            <constraint firstAttribute="width" constant="120" id="j2M-6A-PYk"/>
+                        </constraints>
                     </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vb3-Ys-t8u">
+                        <rect key="frame" x="16" y="18.5" width="94" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="94" id="KNI-on-R0z"/>
+                            <constraint firstAttribute="width" constant="94" id="SJw-Kg-nTg"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="xWR-WY-JFZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="J1o-N2-NQM"/>
-                    <constraint firstItem="xWR-WY-JFZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="jsi-vT-s8m"/>
+                    <constraint firstItem="vb3-Ys-t8u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7gD-3L-hgj"/>
+                    <constraint firstItem="vb3-Ys-t8u" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XIs-JX-aM1"/>
+                    <constraint firstItem="rUE-dJ-uF5" firstAttribute="leading" secondItem="vb3-Ys-t8u" secondAttribute="trailing" constant="8" id="n0h-Z1-QAs"/>
+                    <constraint firstItem="rUE-dJ-uF5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="rYh-2j-7Wc"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="carNameLabel" destination="BDs-pD-vPq" id="cly-Tn-AeT"/>
+                <outlet property="descriptionLabel" destination="kx9-vt-svv" id="aCj-Fv-UlK"/>
+                <outlet property="photoImageView" destination="vb3-Ys-t8u" id="kLR-E8-PTf"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="111.49553571428571"/>
         </tableViewCell>
     </objects>

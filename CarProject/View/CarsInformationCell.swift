@@ -9,6 +9,9 @@
 import UIKit
 
 class CarsInformationCell: UITableViewCell {
+    
+      @IBOutlet weak var carNameLabel: UILabel!
+      @IBOutlet weak var descriptionLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

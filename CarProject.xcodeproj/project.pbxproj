@@ -17,6 +17,7 @@
 		729222DD2463E59D002A251C /* CarsInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729222DB2463E59D002A251C /* CarsInformationCell.swift */; };
 		729222DE2463E59D002A251C /* CarsInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 729222DC2463E59D002A251C /* CarsInformationCell.xib */; };
 		729222E424640EBD002A251C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729222E324640EBD002A251C /* Main.storyboard */; };
+		72D14A322469B91800EA40A4 /* CarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D14A312469B91800EA40A4 /* CarInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		729222DB2463E59D002A251C /* CarsInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsInformationCell.swift; sourceTree = "<group>"; };
 		729222DC2463E59D002A251C /* CarsInformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsInformationCell.xib; sourceTree = "<group>"; };
 		729222E324640EBD002A251C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		72D14A312469B91800EA40A4 /* CarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,6 @@
 				729222DF2463E75F002A251C /* Controller */,
 				729222AB2463DFAD002A251C /* AppDelegate.swift */,
 				729222AD2463DFAD002A251C /* SceneDelegate.swift */,
-				729222AF2463DFAD002A251C /* ViewController.swift */,
 				729222B42463DFB0002A251C /* Assets.xcassets */,
 				729222B62463DFB0002A251C /* LaunchScreen.storyboard */,
 				729222B92463DFB0002A251C /* Info.plist */,
@@ -137,6 +138,7 @@
 		729222DF2463E75F002A251C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				729222AF2463DFAD002A251C /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +156,7 @@
 		729222E22463E7BB002A251C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72D14A312469B91800EA40A4 /* CarInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				729222B02463DFAD002A251C /* ViewController.swift in Sources */,
 				729222AC2463DFAD002A251C /* AppDelegate.swift in Sources */,
 				729222AE2463DFAD002A251C /* SceneDelegate.swift in Sources */,
+				72D14A322469B91800EA40A4 /* CarInfo.swift in Sources */,
 				729222DD2463E59D002A251C /* CarsInformationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
