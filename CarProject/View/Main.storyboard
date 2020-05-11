@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Car Project-->
         <scene sceneID="IUs-11-NBG">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="zi1-4R-QOF" customClass="ViewController" customModule="CarProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u8e-QW-4jK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pBl-7Q-e1W"/>
+                    <navigationItem key="navigationItem" title="Car Project" id="pBl-7Q-e1W"/>
+                    <connections>
+                        <outlet property="tableView" destination="r3C-fE-ZUf" id="rbe-SS-EbN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldl-LQ-Jzh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
